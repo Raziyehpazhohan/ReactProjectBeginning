@@ -1,0 +1,64 @@
+body{
+    >div{
+        width: 100%;
+        >div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >div{
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                >div{
+
+                    &:nth-of-type(2){
+                        >form{
+                            width: 90%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            >input{
+                                width: 100%;
+                                padding: 5px;
+                                border: none;
+                                border-radius: 5px;
+                                outline: none;
+                                &:focus{
+                                    outline: 1px solid rgb(46, 45, 45);
+                                }
+                            }
+                            >button{
+                                margin: 30px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3){
+                        >ul{
+                            width: 100%;
+                            >li{
+                                padding: 15px;
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                background-color: #dddddd;
+                                transition: 0.4s;
+
+                                &:nth-child(even){
+                                    background-color: #f1f1f1;
+                                }
+                                &:hover{
+                                    background-color: #c1c1c1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
